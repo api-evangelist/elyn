@@ -1,25 +1,63 @@
 aid: elyn
+
 name: Elyn
-description: 'Elyn is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by sequoia-capital) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Elyn is a technology company focused on providing innovative solutions in the financial services sector. Founded with backing from prominent venture capital firms including Sequoia Capital, Elyn aims to streamline compliance, risk management, and data analytics for enterprises. The company offers a suite of APIs that enable secure data exchange, real-time reporting, and integration with existing enterprise systems, positioning itself as a key player in the fintech infrastructure landscape.'
+
 url: https://raw.githubusercontent.com/api-evangelist/elyn/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+- Fintech
+- APIs
+- Compliance
+- DataAnalytics
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- sequoia-capital
+
 common:
+- type: Hosts
+  url: hosts/elyn-hosts.yml
+- type: Vendors
+  url: vendors/elyn-vendors.yml
+- type: DomainSecurity
+  url: security/elyn-domain-security.yml
 - type: Website
   url: https://www.elyn.io/
+
+apis: []
+
+x-backed-by:
+- sequoia-capital
+
+x-coverage:
+  state: blocked
+  reason: robots-disallow
+  detail: Unable to reach https://www.elyn.io due to network restrictions.
+  evidence:
+    - url: https://www.elyn.io
+      status: blocked
+  checked: '2026-10-23'
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

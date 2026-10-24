@@ -1,0 +1,16 @@
+generated: '2026-10-23'
+method: none
+source:
+- https://zapier.com/apps/elyn/integrations
+- https://n8n.io/integrations/elyn/
+- https://composio.dev/toolkits/elyn
+- https://monid.ai/tools/elyn
+checked:
+- https://composio.dev/toolkits/elyn
+- https://monid.ai/tools/elyn
+- https://n8n.io/integrations/elyn/
+- https://zapier.com/apps/elyn/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
